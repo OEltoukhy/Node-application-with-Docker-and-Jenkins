@@ -13,7 +13,7 @@ pipeline{
   environment{
     BUILD_VERSION = "1.3.0"
     SERVER_CREDENTIALS = credentials("github-credentials")
-    AUTHOR_NAME= "Omar Eltoukhy010"
+    AUTHOR_NAME= "Omar Eltoukhy"
   }
 
   tools{
