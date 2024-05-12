@@ -44,6 +44,7 @@ def testapp() {
     } else{
         echo "Skipping tests"
     }
+    echo "The test is done on branch ${BRANCH_NAME}"
 }
 
 def buildapp(){

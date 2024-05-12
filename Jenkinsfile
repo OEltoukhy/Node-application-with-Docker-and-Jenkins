@@ -48,7 +48,11 @@ pipeline{
     }
 
     stage("build"){
-
+      when{
+        expression{
+          BRANCH_NAME == "main"
+        }
+      }
       steps{
         script{
             gv.buildapp()
@@ -57,6 +61,11 @@ pipeline{
     }
 
     stage("deploy"){
+       when{
+        expression{
+          BRANCH_NAME == "main"
+        }
+      }
       input {
         message "What environment do you want the APK to deploy on? "
         ok "select"
