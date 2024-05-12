@@ -6,7 +6,7 @@ pipeline{
     // comment 2
     // string(name="VARIABLE", defaultvalue: "", description: "")
     // choice (name: "Version", choices: ["2.0.0","2.0.1"], description: "The available version for now")
-    booleanParam (name: "Execute_tests", defaultValue: true, description: "Execute tests or not")
+    // booleanParam (name: "Execute_tests", defaultValue: true, description: "Execute tests or not")
 
   }
 
