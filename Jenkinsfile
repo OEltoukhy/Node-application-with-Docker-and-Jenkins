@@ -5,7 +5,7 @@ pipeline{
   parameters{
     // comment 2
     // string(name="VARIABLE", defaultvalue: "", description: "")
-    choice (name: "Version", choices: ["2.0.0","2.0.1"], description: "The available version for now")
+    // choice (name: "Version", choices: ["2.0.0","2.0.1"], description: "The available version for now")
     booleanParam (name: "Execute_tests", defaultValue: true, description: "Execute tests or not")
 
   }
@@ -30,18 +30,18 @@ pipeline{
     }
     stage("test"){
 
-        input{
-          message "what kind of test do you to be executed"
-          ok "select"
-        parameters{
-          choice (name: "test", choices: ["Quick Test","Full Test"], description: "The test type")
+      //   input{
+      //     message "what kind of test do you to be executed"
+      //     ok "select"
+      //   parameters{
+      //     choice (name: "test", choices: ["Quick Test","Full Test"], description: "The test type")
           
-        }
-      }
+      //   }
+      // }
       steps{
       script{
         gv.testapp()
-        echo "the ${test} is executed successfully"
+        // echo "the ${test} is executed successfully"
 
       }
       }
@@ -57,17 +57,17 @@ pipeline{
     }
 
     stage("deploy"){
-      input {
-        message "What environment do you want the APK to deploy on? "
-        ok "select"
-      parameters{
-        choice (name: "ENV", choices: ["DEV","Test","PROD"], description: "choose the environment that U want")
-        }
-      }
+      // input {
+      //   message "What environment do you want the APK to deploy on? "
+      //   ok "select"
+      // parameters{
+      //   choice (name: "ENV", choices: ["DEV","Test","PROD"], description: "choose the environment that U want")
+      //   }
+      // }
       steps{
         script{
             gv.deployapp()
-            echo "deploying on ${ENV} environment"
+            // echo "deploying on ${ENV} environment"
 
         }
 
