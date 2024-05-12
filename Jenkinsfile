@@ -2,13 +2,13 @@ def gv
 pipeline{
   agent any
   
-  parameters{
-    // comment 2
-    // string(name="VARIABLE", defaultvalue: "", description: "")
-    // choice (name: "Version", choices: ["2.0.0","2.0.1"], description: "The available version for now")
-    // booleanParam (name: "Execute_tests", defaultValue: true, description: "Execute tests or not")
+  // parameters{
+     // comment 2
+     // string(name="VARIABLE", defaultvalue: "", description: "")
+     // choice (name: "Version", choices: ["2.0.0","2.0.1"], description: "The available version for now")
+     // booleanParam (name: "Execute_tests", defaultValue: true, description: "Execute tests or not")
 
-  }
+  // }
 
   environment{
     BUILD_VERSION = "1.3.0"
