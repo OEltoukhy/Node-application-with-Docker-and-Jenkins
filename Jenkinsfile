@@ -3,7 +3,7 @@ pipeline{
   agent any
   
   // parameters{
-     // comment 2
+     // comment 4
      // string(name="VARIABLE", defaultvalue: "", description: "")
      // choice (name: "Version", choices: ["2.0.0","2.0.1"], description: "The available version for now")
      // booleanParam (name: "Execute_tests", defaultValue: true, description: "Execute tests or not")
