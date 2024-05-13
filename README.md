@@ -14,8 +14,8 @@ How to Install and Run the Project:
 
 1. Clone the repository:
 ```bash
-  git clone [<repository-url>](https://github.com/OEltoukhy/Node.js-Application-with-Dockerized-Environment-and-Jenkins-CI-CD-Pipeline.git)
-
+  git clone https://github.com/OEltoukhy/Node.js-Application-with-Dockerized-Environment-and-Jenkins-CI-CD-Pipeline.git
+```
 3. Navigate to the project directory:
    cd <project-directory>
    
