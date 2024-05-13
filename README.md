@@ -13,21 +13,22 @@ Feature
 How to Install and Run the Project:
 
 1. Clone the repository:
+```bash
   git clone [<repository-url>](https://github.com/OEltoukhy/Node.js-Application-with-Dockerized-Environment-and-Jenkins-CI-CD-Pipeline.git)
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
    cd <project-directory>
    
-3. Install dependencies:
+4. Install dependencies:
   npm install
 
-4. Build the Docker image:
+5. Build the Docker image:
   docker build -t node-docker-app .
 
-5. Run the Docker container for development:
+6. Run the Docker container for development:
   docker-compose -f docker-compose.dev.yml up
 
-6. Access the application in your browser at http://localhost:port
+7. Access the application in your browser at http://localhost:port
 
 How to Use the Project:
 Development Environment:
